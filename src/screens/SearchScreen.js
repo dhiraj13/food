@@ -23,7 +23,6 @@ const SearchScreen = () => {
         onTermSubmit={() => searchApi(term)}
       />
       {errorMessage ? <Text>{errorMessage}</Text> : null}
-      <Text>We found {restaurants.length} restaurants</Text>
       <ScrollView>
         <RestaurantsList
           restaurants={filterRestaurantsByPrice('$')}
