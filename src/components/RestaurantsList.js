@@ -1,10 +1,11 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 
-const RestaurantsList = ({ title }) => {
+const RestaurantsList = ({ title, restaurants }) => {
   return (
     <View>
       <Text style={styles.titleStyle}>{title}</Text>
+      <Text>Restaurants: {restaurants.length}</Text>
     </View>
   )
 }
