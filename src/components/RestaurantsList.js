@@ -10,6 +10,10 @@ import { withNavigation } from 'react-navigation'
 import RestaurantsDetail from './RestaurantsDetail'
 
 const RestaurantsList = ({ title, restaurants, navigation }) => {
+  if (!restaurants.length) {
+    return null
+  }
+
   return (
     <View style={styles.containerStyle}>
       <Text style={styles.titleStyle}>{title}</Text>
